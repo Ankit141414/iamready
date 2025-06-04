@@ -1,13 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form Page</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <form>
-        
+
+<nav class="navbar">
+    <div class="navdiv">
+        <div class="logo"><a href="#">Ankit</a></div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+    
+</nav>
+    <form class="form1" action="#" method="post">
+        <div class="onediv">
+            <label for="first_name">First Name :</label>
+            <input type="text" id="first_name" name="firstname">
+
+            <label for="last_name">Last Name :</label>
+            <input type="text" id="last_name" name="last_name">
+        </div>
+
+        <div class="twodiv">
+            <select name="passion">
+                <option value="singer">Singer</option>
+                <option value="dancer">Dancer</option>
+                <option value="gymnast">Gymnast</option>
+                <option value="doctor">Doctor</option>
+                <option value="pilot" selected>Pilot</option>
+                <option value="engineer">Engineer</option>
+            </select>
+        </div>
+
+        <div class="threediv">
+            <button type="submit" name="submit">Submit</button>
+        </div>
+
     </form>
 </body>
 </html>
